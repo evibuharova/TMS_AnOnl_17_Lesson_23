@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.tms_anonl_17_lesson_22"
+    namespace = "com.example.tms_anonl_17_lesson_23"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.tms_anonl_17_lesson_22"
+        applicationId = "com.example.tms_anonl_17_lesson_23"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -39,8 +39,12 @@ android {
 }
 
 dependencies {
-
-    implementation("androidx.core:core-ktx:1.12.0")
+    val lifecycle_version = "2.7.0"
+    val arch_version = "2.2.0"
+    val fragment_version = "1.6.2"
+    implementation("androidx.fragment:fragment-ktx:$fragment_version")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
